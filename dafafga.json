@@ -45,15 +45,7 @@
       "ext": {
         "url": "http://v.rbotv.cn"
       },
-        {
-            "key": "dj",
-            "name": "短剧库",
-            "type": 3,
-            "api": "https://cdn.jsdelivr.net/gh/jiutv/drama-source@main/drama_list.json",
-            "searchable": 1,
-            "quickSearch": 1
-        
-    },
+  
     {
       "key": "哔哩视频",
       "name": "七星🌟┃秒播⒈",
