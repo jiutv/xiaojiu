@@ -10,6 +10,14 @@
       "searchable": 0
     },
     {
+            "key": "dj",
+            "name": "短剧库111",
+            "type": 3,
+            "api": "https://cdn.jsdelivr.net/gh/jiutv/drama-source@main/drama_list.json",
+            "searchable": 1,
+            "quickSearch": 1
+        }
+    {
       "key": "腾腾视频",
       "name": "腾腾｜视频",
       "type": 3,
