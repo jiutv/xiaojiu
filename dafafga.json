@@ -21,14 +21,13 @@
       "searchable": 0,
       "changeable": 1
     },
-    {
-            "key": "dj",
+       {
+            "key": "dj001",
             "name": "短剧库",
-            "type": 3,
-            "api": "https://cdn.jsdelivr.net/gh/jiutv/drama-source@main/drama_list.json",
-            "searchable": 1,
-            "quickSearch": 1
-        },
+            "type": 4,
+            "api": "https://cdn.jsdelivr.net/gh/jiutv/xiaojiu@main/dafafga.json",
+            "searchable": 1
+        }
     
     {
       "key": "农民影视",
