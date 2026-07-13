@@ -1,0 +1,105 @@
+{
+  "spider": "./custom_spider.jar;md5;0ecc9ff5c7a37df3068bf77d01f90b82",
+  "sites": [
+    {
+      "key": "csp_douban",
+      "name": "豆瓣影视",
+      "type": 3,
+      "api": "csp_Douban",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1
+    },
+    {
+      "key": "csp_FengYe",
+      "name": "枫叶影视",
+      "type": 3,
+      "api": "csp_FengYe",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "csp_jinpai",
+      "name": "金牌",
+      "type": 3,
+      "api": "csp_jinpai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "drpy_js茶杯狐",
+      "name": "茶杯狐",
+      "type": 3,
+      "api": "./libs/drpy2.min.js",
+      "ext": "./js/茶杯狐.js"
+    },
+    {
+      "key": "drpy_js秒看影视",
+      "name": "秒看影视",
+      "type": 3,
+      "api": "./libs/drpy2.min.js",
+      "ext": "./js/秒看影视.js"
+    },
+    {
+      "key": "csp_Au1080",
+      "name": "Auete影视",
+      "type": 3,
+      "api": "csp_Au1080",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1
+    }
+  ],
+  "lives": [
+    {
+      "name": "live1",
+      "type": 0,
+      "playerType": 1,
+      "url": "https://gitee.com/Film1/love/raw/master/LOVE.txt"
+    },
+    {
+      "name": "live2",
+      "type": 0,
+      "playerType": 1,
+      "url": "https://raw.gitcode.com/susu521/LOVE/raw/main/su2.txt"
+    }
+  ],
+  "parses": [
+    {"name":"并发","type":2,"url":"Parallel"},
+    {"name":"轮询","type":2,"url":"Sequence"},
+    {
+      "name":"自动解析","type":1,"url":"https://api.tyun77.cn/api.php/provide/parseDicturl?url=",
+      "ext":{"flag":["qq","腾讯","qiyi","爱奇艺","youku","优酷","mgtv","芒果","bilibili"]}
+    },
+    {
+      "name":"手动解析","type":1,"url":"shturl.cc/xRpThDvTXdMxFZXiQY8X4CIURE26",
+      "ext":{"flag":["qq","腾讯","qiyi","爱奇艺","youku","优酷","mgtv","芒果","bilibili"]}
+    },
+    {"name":"卧龙","type":0,"url":"https://jx.wolongm3u8.com:65/m3u8.php?url="},
+    {"name":"2号线","type":0,"url":"https://jx.777jiexi.com/player/?url="},
+    {"name":"12号线","type":0,"url":"https://jx.jsonplayer.com/player/?url="}
+  ],
+  "flags":["youku","优酷","qq","腾讯","iqiyi","爱奇艺","mgtv","芒果","bilibili","哔哩哔哩"],
+  "ijk":[
+    {
+      "group":"软解码",
+      "options":[
+        {"category":4,"name":"mediacodec","value":"0"},
+        {"category":4,"name":"max-buffer-size","value":"5242880"},
+        {"category":1,"name":"fflags","value":"fastseek"},
+        {"category":4,"name":"reconnect","value":"1"}
+      ]
+    },
+    {
+      "group":"硬解码",
+      "options":[
+        {"category":4,"name":"mediacodec","value":"1"},
+        {"category":4,"name":"max-buffer-size","value":"5242880"},
+        {"category":1,"name":"fflags","value":"fastseek"},
+        {"category":4,"name":"reconnect","value":"1"}
+      ]
+    }
+  ]
+}
